@@ -1,0 +1,194 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* General Button Styling */
+.btn {
+    background: #00796b;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.btn:hover {
+    background: #004d40;
+    transform: scale(1.05);
+}
+
+/* Button Press Effect */
+.btn:active {
+    transform: scale(0.95);
+}
+
+/* Button inside forms */
+button.btn {
+    cursor: pointer;
+    border: none;
+}
+
+
+
+/* Responsive Button Sizing */
+@media (max-width: 768px) {
+    .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+ 
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to right, #004d40, #00796b);
+    color: white;
+    height: 50vh;
+}
+
+/* Success Section */
+.success {
+    text-align: center;
+    padding: 50px;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.stat {
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    width: 150px;
+}
+
+
+/* Footer */
+footer {
+    background: #004d40;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+
+/* Base styles and imports remain as provided... */
+
+/* Scrollable Cards Section */
+.scroll-cards {
+    padding: 2rem;
+    background-color: #f8f9fa;
+  }
+  
+  .scroll-cards h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+  }
+  
+  .cards-wrapper {
+    position: relative;
+  }
+  
+  .cards-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 1rem;
+    gap: 1rem;
+  }
+  
+  /* Card styles */
+  .card {
+    flex: 0 0 auto;
+    width: 250px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  .card-content {
+    padding: 1rem;
+  }
+  
+  .card-content h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card-content p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1rem;
+  }
+  
+  /* Scroll Buttons */
+  .scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .left-btn {
+    left: 10px;
+  }
+  
+  .right-btn {
+    right: 10px;
+  }
+  
+  .scroll-btn:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Hide scrollbar in Webkit browsers */
+  .cards-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge, and Firefox */
+  .cards-container {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
